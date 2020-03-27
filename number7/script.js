@@ -1,14 +1,12 @@
-var x = document.getElementById("demo");
+const URL_TO_FETCH = 'http://api.ipapi.com/186.206.254.170?access_key=26c8106cb8cfd5de731914d06268f1a9';
 
-function getLocation() {
-   if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(showPosition);
-   } else {
-      x.innerHTML = "O seu navegador não suporta Geolocalização.";
-   }
-}
-
-function showPosition(position) {
-   x.innerHTML = "Latitude: " + position.coords.latitude +
-      "<br>Longitude: " + position.coords.longitude;
-}
+fetch(URL_TO_FETCH)
+   .then(function (response) {
+      response.json().then(function (data) {
+         console.log(data);
+         document.getElementById("ip").innerHTML = data.ip;
+      });
+   })
+   .catch(function (err) {
+      console.error('Failed retrieving information', err);
+   });
