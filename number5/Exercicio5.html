@@ -6,54 +6,38 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
 </head>
-nome, data de fundação, quantidade de campus,
-quantidade de alunos, quantidade de professores, quantidade cursos, melhor curso
-no MEC.
 
 <body id="bodyColor">
+   <h3>Questionario</h3>
    <p>
-      <label>Questionario</label>
-   </p>
-   <p>
-      <label>Digita seu nome:</label>
+      <label>Digita seu Nome:</label>
       <input type="text" id="valueName">
    </p>
    <p>
-      <label>data de fundação:</label>
-      <input type="text" id="valueCor">
+      <label>Data de Fundação:</label>
+      <input type="text" id="valueFun">
    </p>
    <p>
-      <label>quantidade de campus:</label>
-      <input type="text" id="valueAge">
+      <label>Quantidade de Campus:</label>
+      <input type="text" id="valueCampus">
    </p>
    <p>
-      <label>quantidade de alunos:</label>
-      <input type="text" id="valueAge">
+      <label>Quantidade de Alunos:</label>
+      <input type="text" id="valueAluno">
    </p>
    <p>
-      <label>quantidade de professores:</label>
-      <input type="text" id="valueAge">
+      <label>Quantidade de professores:</label>
+      <input type="text" id="valueProf">
    </p>
    <p>
-      <label>quantidade cursos:</label>
-      <input type="text" id="valueCity">
+      <label>Quantidade de curso:</label>
+      <input type="text" id="valueCurso">
    </p>
    <p>
-      <label>quantidade cursos:</label>
-      <input type="text" id="valueCity">
+      <label>Melhor curso no MEC:</label>
+      <input type="text" id="valueMEC">
    </p>
-   <button onclick="location.reload();">Salvar</button>
-   <div class="resposta">
-      <p>
-         <label>seu nome é:</label>
-         <h1 id="nomeSet"></h1>
-      </p>
-      <p>
-         <label>seu idade é:</label>
-         <h2 id="ageSet"></h2>
-      </p>
-      <p id="citySet"></p>
-   </div>
+   <button onclick="SaveStorage()">Salvar</button>
 </body>
 <script src="./script.js"></script>
 
